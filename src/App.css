@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #24242c;
+}
+
+.App {
+  text-align: initial;
+}
+
+.list
+{
+  text-align: initial;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #020729;
+  height: 90px;
+  padding: 30px 25px;
+  justify-content: space-between;
+}
+
+.nav > h1
+{
+  margin: 0;
+  color: aqua;
+}
+
+.nav-logo {
+  width: 80px;
+}
+
+.nav-items {
+  font-size: 30px;
+  color: aqua;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+
+.nav-items > li:hover
+{
+  background-color: lightslategray;
+}
+
+main {
+  padding: 57px 27px;
+  color:white;
+  background-image: url(./images/darklogo.jpg);
+  background-repeat: no-repeat;
+  background-position: 30% 75%;
+}
+
+.main--title
+{
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  text-decoration: underline;   
+}
+
+.main--facts {
+  margin-top: 50px;
+  max-width: 600px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
+
+footer{ 
+    color: azure;
+    text-align: center;  
+ }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
